@@ -3,7 +3,7 @@ import path from "node:path";
 import { createClient } from "@libsql/client";
 
 const envPath=path.join(process.cwd(),".env.local");
-if(!fs.existsSync(envPath))throw new Error(".env.local 不存在，请先执行 vercel env pull");
+if(!fs.existsSync(envPath))throw new Error(".env.local 不存在，请先配置 TURSO_DATABASE_URL 和 TURSO_AUTH_TOKEN");
 for(const line of fs.readFileSync(envPath,"utf8").split(/\r?\n/)){const match=line.match(/^([^#=]+)=(.*)$/);if(match&&!process.env[match[1].trim()])process.env[match[1].trim()]=match[2].trim().replace(/^['"]|['"]$/g,"")}
 const url=process.env.TURSO_DATABASE_URL,authToken=process.env.TURSO_AUTH_TOKEN;
 if(!url||!authToken)throw new Error("缺少 Turso 云数据库连接变量");

@@ -5,7 +5,7 @@ description: >
   Use when connecting an application to a Turso Cloud database, creating or scoping auth tokens
   (JWT, fine-grained permissions, JWKS/external auth providers), or provisioning and managing
   cloud databases. Covers per-language SDKs (JavaScript/TypeScript, Python, Go, Rust),
-  authentication & authorization, and marketplace integrations (Vercel).
+  authentication & authorization, and managed database integrations.
 ---
 
 # Turso Cloud Skills
@@ -31,10 +31,6 @@ Work with Turso Cloud from Rust: the `turso` crate (`sync` feature) for local-fi
 ## [turso-cloud-auth](turso-cloud-auth/overview.md)
 
 Authenticate and authorize access to Turso Cloud databases: database URLs, platform tokens via the Turso CLI, scoping (group/database/read-only/time-limited), fine-grained per-table permissions, external auth providers via JWKS (Clerk, Auth0), and token invalidation. Use when issuing credentials, restricting what a client can do, or wiring an existing auth provider to Turso.
-
-## [turso-cloud-vercel](turso-cloud-vercel/overview.md)
-
-Use and manage Turso Cloud databases provisioned through the Vercel Marketplace (integration slug `tursocloud`): injected environment variables, inspecting and provisioning resources with the Vercel CLI, region selection, and safety rules for credentials and destructive operations. Use when a Vercel project has — or needs — a Turso database.
 
 ## Turso Cloud features
 

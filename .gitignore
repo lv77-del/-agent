@@ -15,8 +15,8 @@ coverage/
 .runtime/
 
 # Local platform state and logs
-.vercel/
 *.log
+*.tsbuildinfo
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*

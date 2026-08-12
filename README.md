@@ -96,7 +96,7 @@ git push -u origin main
 
 ## 安全说明
 
-- 不要提交 `.env.local`、数据库文件、日志、`.runtime` 或 `.vercel`。
+- 不要提交 `.env.local`、数据库文件、日志或 `.runtime`。
 - 不要把 AppSecret、API Key、数据库 Token 写进浏览器端代码。
 - 生产环境必须设置随机且稳定的 `INTEGRATION_CREDENTIAL_KEY`。
 - 公众号操作默认创建或更新草稿，不会在未获得接口权限时伪装成已发布。
